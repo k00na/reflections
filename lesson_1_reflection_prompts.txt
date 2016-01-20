@@ -1,0 +1,25 @@
+HOW TO USE GIT AND GITHUB
+
+NEW COMMAND: Comparing old and new files with $diff
+
+	diff -u game_old.js game_new.js
+	
+	- The ones with minus existed in the previous version but not in the new version
+	+ The ones with plus sign were added in the new version
+	
+NEW COMMAND: For printing the current directory path
+
+	PWD <-- that's it, it's all you haz to type
+	
+	
+COURSE QUESTION: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+	The diff command prints out the differences between two file nicely and you can check the added and removed
+	lines of code for any peculiarities. Wherever there was a + or a - sign I checked the code and it was clear
+	that the word "space" was misspelled. 
+	
+COURSE QUESTION: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+	Well, it would make flipping between old and new versions much easier. You could easily go back to a point where everything worked and such. 
+	
+COURSE QUESTION: 
