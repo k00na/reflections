@@ -2,3 +2,12 @@ COURSE QUESTION: Why might you want to always pull changes manually rather than 
 
 	Because you want to know what you're pulling from GIT. You can't let anything just jump into your repository. 
 	
+COURSE QUESTION: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	FORKS vs CLONES: to fork a repository means to make a clone of it on your github account. 
+			 if you want this forked repository on your computer, you have to clone it. 
+
+	CLONES vs BRANCHES: clone represents a whole repository, a branch represents only that one branch of the repository.
+
+	FORKS vs BRANCHES: two utterly different things
+
