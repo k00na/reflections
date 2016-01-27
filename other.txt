@@ -1,0 +1,24 @@
+MY FIRST MERGE CONFLICT
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   game.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+what does all this mean? 
+
+QUESTIONS THAT ARISE: 
+					- what is a merge conflict?
+					- what are unmerged paths?
+					- what does it mean if a my origin/master branch is ahead by 1 commit?
+					
+Merge conflict: 

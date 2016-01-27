@@ -1,0 +1,96 @@
+Lesson 2, son!
+
+COURSE QUESTON: What happens when you initialize a repository? Why do you need to do it?
+	
+	this command creates a .git directory inside the initialised folder and that is 
+	then used for tracking changes and working with git. 
+
+COURSE QUESTION: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	Staging area VS Working directory => Staging area is where the working directory holds it's changed files. Working directory contains all the current branch files, staging area contains only the files to be commited
+	Staging area VS Repository 	  => Repository holds all the possible versions of code, staging area contains only the staged files, ready for commiting
+
+COMMIT MESSAGE STYLE GUIDE:
+
+	Type: short notation explaining what type of a commit we're doing:
+		- feat
+		- fix
+		- docs
+		- style
+		- refactor
+		- test
+		- chore
+
+	Subject: 
+		- shouldn't be greater than 50chars. 
+		- Begin with capital letter, do not end with a period. 
+
+	Body: 
+		- optional
+		- not all commits are complex enough to have a body.
+		- explain WHAT&WHY 
+		- do not explain HOW
+		- follow style rules: 
+				     - must have a blank line between the title and the body
+				     - line is MAX 72 chars long
+
+	Footer: 
+		- optional
+		- used to reference issue tracker IDs
+		- Example:
+			'Resolves: #123
+			 See also: #456, #789'
+
+
+COURSE QUESTION: How can you use the staging area to make sure you have one commit per logical change?
+
+	Hmmm... by calling "git diff --staged" and checking out what new changes have been introduced
+	in the staging area compared to the previous commit.  
+
+
+COURSE QUESTION: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	By looking at different branches you get an overview on what features you have been trying to implement, because
+	branches are mainly used for that. Also, if a new feature doesn't work, u can always go back to the master branch. 
+	
+	Branches are also used for bug fixes and active work. 
+
+COURSE QUESTION: How do the diagrams help you visualize the branch structure?
+
+	git log --graph --oneline master coins
+
+	This command show you at which point in the master branch history the coins branch was created
+	It also show the commits of the coins branch and then also the commits on the master branch itself
+	made after the creation of the coins branch. This is simple to understand when visualised. 
+
+COURSE QUESTION: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	Coins branch represented a new feature. When the feature was finished and working we decided to include it in our
+	program by merging it with the master branch. 
+
+COURSE QUESTION: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	PROs (automatic merging): git knows which code was added, which removed and which code was kept the same. 
+				  Based on this knowledge it usally knows which code to keep in the new merge. 
+
+	CONs (automatic merging): merge conflicts and GIT not knowing which code to keep and use. 
+
+	PROs(manually): well, you decide right on which code to use and which part of it u discard
+	
+	CONs(manually): well, there's a shit load of files that can be changed and a shit load of you working on them
+			can be automated with git. 
+
+NOTE 1 - Think of commits as having parents 
+
+NOTE 2 - Deattached head state:
+
+	This happens when you checkout a commit. The commit is then somewhat similar to something floating in space
+	until a new branch is created for it. It's like an parallel universe that has no official history until you branch it. 
+
+NOTE 3 - Nice definition of a master branch:
+	
+	"Production quality branch, never breaks, always works" 
+	Other branches are for testing&implementing new features, bug fixes and such. 
+		
+			
+

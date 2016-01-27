@@ -34,3 +34,21 @@ COURSE QUESTION: What do you think are the pros and cons of manually choosing wh
 	
 	CONS: 
 		- you can miss out and not save anything
+
+COURSE QUESTION: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+	GIT allows saving multiple files because these files interact and depend upon eachother. 
+	Google docs saves files seperatly because they are not meant to have any relationships between them.
+
+COURSE QUESTION: How can you use the commands git log and git diff to view the history of files?
+
+	$git log --stat ------> shows you how many lines were added/deleted in all the commits
+	$git diff first_id second_id ------> show difference between two specific commits
+
+COURSE QUESTION: How might using version control make you more confident to make changes that could break something?
+
+	Well, using GIT, I will always be able to return to the previous working version when building something new an potentially risky. 
+
+COURSE QUESTION: Now that you have your workspace set up, what do you want to try using Git for?
+	
+	I'm gonna be a heavy GIT user from now on. I need it especially for my new project. 
